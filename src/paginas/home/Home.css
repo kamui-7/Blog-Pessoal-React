@@ -1,6 +1,10 @@
-.titulo{
-    color: red;
+.h3{
     text-align: center;
+    font-family: Helvetica;
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-fill-color: red;
 }
 
 .img {
