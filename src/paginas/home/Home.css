@@ -1,15 +1,23 @@
-.h3{
-    text-align: center;
-    font-family: Helvetica;
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-fill-color: red;
+.fundoh{
+    background-color: white; 
 }
 
-.img {
-    width: 500px; 
-    height: 500px;
-    display: block;
-    margin: 0 auto;
+.tituloh{
+    color: red;
+    font-weight: bold
+}
+
+.subtituloh{
+    color: black;
+    font-weight: bold
+}
+
+.botaoh{
+    border-color: red !important;
+    background-color: black !important;
+    color: white !important; 
+}
+
+.fundoposts{
+    background-color: red !important;
 }

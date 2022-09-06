@@ -1,0 +1,30 @@
+.imgfundoc{
+    background-image: url(https://wallpaperaccess.com/full/24959.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.fundoc2{
+    background-color: rgba(193,32,38,255);
+}
+
+.texto2{
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.btnCadastrar{
+    border-color: red !important;
+    background-color: black !important;
+    color: white !important; 
+}
+
+.btnCancel{
+    margin-right: 20px !important;
+    border-color: white !important;
+    background-color: red !important;
+    color: black !important; 
+}
