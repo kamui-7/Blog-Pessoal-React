@@ -15,7 +15,7 @@ function Login() {
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
-            usuario: '',
+            email: '',
             senha: '',
             token: ''
         }
@@ -40,7 +40,7 @@ function Login() {
         e.preventDefault();
 
         try {
-            await login(`/usuario/logar`, userLogin, setToken)
+            await login(`/api/Usuarios/logar`, userLogin, setToken)
 
             alert('Usuario Logado com sucesso!')
         } catch (error) {
@@ -60,7 +60,7 @@ function Login() {
                 <Box paddingX={20}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom component='h3' align='center' className="fontel" >Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>)=>updateModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                        <TextField value={userLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>)=>updateModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>)=>updateModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign="center">
                             
@@ -75,7 +75,7 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'> Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastro' className="text-decorator-none">
+                        <Link to='/cadastrousuario' className="text-decorator-none">
                             <Typography variant='subtitle1' gutterBottom align='center' className="subtitulol2" >Cadastre-se</Typography>
                         </Link>
                     </Box>
